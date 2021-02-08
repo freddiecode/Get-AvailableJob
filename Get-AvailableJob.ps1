@@ -1,4 +1,44 @@
 function Get-AvailableJob {
+<#
+.SYNOPSIS
+
+Find out next job using PowerShell!
+
+.DESCRIPTION
+
+Allows you to search for avaiable jobs via the NAV job ads public API.
+More information about the API is found here: https://github.com/navikt/pam-public-feed
+
+.PARAMETER Name
+Specifies the file name.
+
+.PARAMETER Extension
+Specifies the extension. "Txt" is the default.
+
+.INPUTS
+
+None. You cannot pipe objects to Add-Extension.
+
+.OUTPUTS
+
+System.String. Add-Extension returns a string with the extension
+or file name.
+
+.EXAMPLE
+
+Get-AvailableJob -County Innlandet -Municipal Hamar  -Category 'Helse og sosial' -ShowDescription
+
+Get-AvailableJob -County Innlandet -Municipal Lillehammer -Category IT
+
+Get-AvailableJob -County Oslo -Municipal Oslo -Category IT | Select-Object -First 10
+
+
+.LINK
+
+https://www.cloudpilot.no
+
+
+#>
 
         [cmdletbinding()]
     param(       

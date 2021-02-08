@@ -26,14 +26,22 @@ TypeName: Selected.System.Management.Automation.PSCustomObject. Get-AvailableJob
 
 ## .EXAMPLE
 ````powershell
+# Returns all available jobs in Innlandet/Hamar under the category 'Helse og sosial'. Shows description of all jobs
 Get-AvailableJob -County Innlandet -Municipal Hamar  -Category 'Helse og sosial' -ShowDescription
 ````
 
 ## .EXAMPLE
+````powershell
+# Returns all available IT-jobs located in Innlandet/Lillehammer 
 Get-AvailableJob -County Innlandet -Municipal Lillehammer -Category IT
+````
 
 ## .EXAMPLE
+````powershell
+# Returns the first 10 available jobs in Oslo in the category 'IT'
 Get-AvailableJob -County Oslo -Municipal Oslo -Category IT | Select-Object -First 10
+````
 
-## .LINK
-https://www.cloudpilot.no
+## .AUTHOR
+
+Freddie Christiansen | www.cloudpilot.no

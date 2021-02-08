@@ -25,7 +25,9 @@ All categories are retrieved by the help of 'Dynamic Parameters' from and API en
 TypeName: Selected.System.Management.Automation.PSCustomObject. Get-AvailableJob returns a PSCustomObject
 
 ## .EXAMPLE
+````powershell
 Get-AvailableJob -County Innlandet -Municipal Hamar  -Category 'Helse og sosial' -ShowDescription
+````
 
 ## .EXAMPLE
 Get-AvailableJob -County Innlandet -Municipal Lillehammer -Category IT

@@ -1,12 +1,3 @@
-﻿# Valid Categories: https://arbeidsplassen-api.nav.no/stillingsimport/api/v1/categories/pyrk/occupations
-
-# NAV Ads Public API : https://arbeidsplassen.nav.no/public-feed/swagger/#/default/get_public_feed_api_v1_ads
-
-# Request example with category: https://arbeidsplassen.nav.no/public-feed/api/v1/ads?category=IT&municipal=Hamar&county=Innlandet
-
-# https://gist.github.com/SimonWahlin/275039888ab80c600b52f7d456134a2e
-
-
 function Get-AvailableJob {
 
         [cmdletbinding()]
@@ -68,9 +59,6 @@ function Get-AvailableJob {
                     }
                     
                 $Cate | Add-Member -MemberType NoteProperty -Name Level1 -Value $CategoryElements.Level1
-                #$Cate | Add-Member -MemberType NoteProperty -Name Level2 -Value $CategoryElements.Level2
-                #$Cate | Add-Member -MemberType NoteProperty -Name StyrkCode -Value $CategoryElements.styrkCode
-                #$Cate | Add-Member -MemberType NoteProperty -Name StyrkDescription -Value $CategoryElements.strykDescription
 
                 $AllCategories += $Cate
 
@@ -120,7 +108,7 @@ process {
 
 do {
 
-
+        # No need to yell "Oh my, Freddie put his API Token out on the Internet!" -> It is already posted here: https://github.com/navikt/pam-public-feed ..
         $Token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwdWJsaWMudG9rZW4udjFAbmF2Lm5vIiwiYXVkIjoiZmVlZC1hcGktdjEiLCJpc3MiOiJuYXYubm8iLCJpYXQiOjE1NTc0NzM0MjJ9.jNGlLUF9HxoHo5JrQNMkweLj_91bgk97ZebLdfx3_UQ"
 
         $Catego = $PSBoundParameters.Category

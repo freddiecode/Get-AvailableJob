@@ -15,7 +15,7 @@ Specifies the county in your search
 
 ## .PARAMETER Municipal
 Specifies the municipality of your search.
-Remember that the municipality must be located in the County to get a valid request
+Remember that the municipality must be located in the county to get a valid request
 
 ## .PARAMETER Category
 Specifies the job category of your search

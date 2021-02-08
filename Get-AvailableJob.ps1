@@ -2,7 +2,7 @@ function Get-AvailableJob {
 <#
 .SYNOPSIS
 
-Seach and find your next job using PowerShell!
+Search and find your next job using PowerShell!
 
 .DESCRIPTION
 
